@@ -1,0 +1,16 @@
+26/02 - Desenvolvimento Web.
+Referências.
+
+1. Páginas web de referência.
+
+ - [Python](https://www.python.org/)
+ - [Git] (https://git-scm.com/)
+ - [VsCode] (https://code.visualstudio.com/)
+ - [Sqlite] (https://www.sqlite.org/)
+
+2. Utilidade de cada ferramenta detalhada e a relação com Desenvolvimento Web.
+
+ - Python: Linguagem de programação utilizada para desenvolvimento web. É uma linguagem de alto nível, com uma sintaxe clara e legível, que facilita a manutenção e o desenvolvimento de aplicações web.
+ - Git: Sistema de controle de versão utilizado para controle de versão de código. Auxilia no desenvolvimento de aplicações web, permitindo que vários desenvolvedores trabalhem no mesmo projeto, sem que haja conflitos de código.
+ - VsCode: Editor de código utilizado para desenvolvimento web. Possui diversas extensões que facilitam o desenvolvimento de aplicações web, como extensões para Python, Git, HTML, CSS, entre outras.
+ - Sqlite: Banco de dados utilizado para armazenamento de dados. É um banco de dados leve e de fácil utilização, que pode ser utilizado em aplicações web para armazenar dados de forma eficiente.
