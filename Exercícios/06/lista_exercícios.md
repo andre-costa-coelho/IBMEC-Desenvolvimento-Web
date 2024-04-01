@@ -11,7 +11,7 @@
 - CSS – formatação da apresentação, layout e animações;
 - JavaScript – comportamento dinâmico, geração de conteúdo, comunicação e manipulação dos elementos do documento em ”tempo de execução”.
 ### 4) Qual é a diferença entre os conceitos de tag, elemento e atributo, no contexto do HTML?
-- Uma tag é um elemento fundamental em HTML que define a estrutura e o significado dos elementos dentro de um documento. Podendo ser ags de abertura <tag> e tags de fechamento </tag>, que são usadas para envolver o conteúdo ao qual a tag se aplica.
+- Uma tag é um elemento fundamental em HTML que define a estrutura e o significado dos elementos dentro de um documento. Podendo ser tags de abertura <tag> e tags de fechamento </tag>, que são usadas para envolver o conteúdo ao qual a tag se aplica.
 - Um elemento HTML é uma estrutura completa que consiste em uma tag de abertura, conteúdo (se houver) e uma tag de fechamento (se aplicável).
 - Um atributo é uma parte adicional de uma tag que fornece informações adicionais sobre a tag ou modifica o comportamento do elemento. São inseridos dentro da tag de abertura e consistem em um nome e um valor, separados por um sinal de igual (=).
 ### 5) Desenvolva um documento HTML mínimo que contenha um parágrafo com a frase “Estou por aqui”, tenha o título “minha página” e use a codificação de caracteres utf-8.
