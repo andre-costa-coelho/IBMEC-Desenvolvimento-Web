@@ -11,13 +11,12 @@
 - CSS – formatação da apresentação, layout e animações;
 - JavaScript – comportamento dinâmico, geração de conteúdo, comunicação e manipulação dos elementos do documento em ”tempo de execução”.
 ### 4) Qual é a diferença entre os conceitos de tag, elemento e atributo, no contexto do HTML?
-- Uma tag é um elemento fundamental em HTML que define a estrutura e o significado dos elementos dentro de um documento. Podendo ser tags de abertura <tag> e tags de fechamento </tag>, que são usadas para envolver o conteúdo ao qual a tag se aplica.
-- Um elemento HTML é uma estrutura completa que consiste em uma tag de abertura, conteúdo (se houver) e uma tag de fechamento (se aplicável).
+- Uma tag é um componente definido pela linguagem para marcação de texto, que define a estrutura e o significado dos elementos dentro de um documento. Podendo ser tags de abertura `<tag>` e tags de fechamento `</tag>`, que são usadas para envolver o conteúdo ao qual a tag se aplica.
+- Os elementos HTML são componentes dos documentos WEB. A estrutura completa consiste em uma tag de abertura, conteúdo (se houver) e uma tag de fechamento (se aplicável).
 - Um atributo é uma parte adicional de uma tag que fornece informações adicionais sobre a tag ou modifica o comportamento do elemento. São inseridos dentro da tag de abertura e consistem em um nome e um valor, separados por um sinal de igual (=).
 ### 5) Desenvolva um documento HTML mínimo que contenha um parágrafo com a frase “Estou por aqui”, tenha o título “minha página” e use a codificação de caracteres utf-8.
-```
-<!DOCTYPE html>
-<html lang="pt-br" > 
+```html
+<html> 
     <head>
         <title>minha página</title>
         <meta charset="utf-8">
@@ -28,30 +27,20 @@
 </html>
 ```
 ### 6) O que é uma “pilha de protocolos”, no contexto da internet?
-Uma pilha de protocolos se refere a um conjunto de protocolos de comunicação interconectados que são usados em conjunto para permitir a comunicação entre diferentes dispositivos em uma rede de computadores. O modelo OSI é geralmente utilizado, e consiste em:
-- Aplicação
-  - viabilizar aplicações de rede: FTP, SMTP, HTTP.
-- Transporte
-  - transferência de dados entre processos: TCP, UDP.
-- Rede
-  - roteamento de datagramas da origem até o destino: IP.
-- Enlace
-  - transferência de dados entre elementos vizinhos na rede: Ethernet, 802.11(WiFi), PPP.
-- Físico
-  - movimenta ‘bits’ na meio físico.
+Uma pilha de protocolos se refere a uma organização lógica de protocolos de comunicação interconectados que são usados em conjunto para permitir a comunicação entre diferentes dispositivos em uma rede de computadores.
 ### 7) Quais são os principais protocolos da camada de transporte da internet e qual a principal diferença entre eles?
 - Os principais protocolos são TCP (Protocolo de Controle de Transmissão) e UDP (Protocolo de datagrama do usuário).
-- Ao contrário do protocolo TCP, o UDP não oferece transporte de dados confiável, controle de fluxo, controle de congestionamento, controle de tempo, garantia de desempenho (throughput) mínimo e configuração de conexão. No entanto ele é utilizado por funcionar mais rapidamente. 
+- Ao contrário do protocolo TCP, o UDP não é orientado à conexão. Recorrente disso o protocolo UDP não oferece transporte de dados confiável, controle de fluxo, controle de congestionamento, controle de tempo, garantia de desempenho (throughput) mínimo e configuração de conexão. No entanto ele é utilizado por funcionar mais rapidamente. 
 ### 8) Quais as principais características da arquitetura cliente-servidor e como ela se diferencia de aplicações peer-to-peer?
 - A arquitetura cliente-servidor está sempre 'no ar' e possui endereço de ip permanente. Os cliente também comunicam-se com o servidor, podem ter conexões intermitentes, podem ter endereços IP dinâmicos  e não se comunicam diretamente entre si
-- Já a arquitetura P2P não existe servidor sempre ligado, e tem comunicação direta entre sistemas finais arbitrários. Os usuários (peers) requisitam serviços de outros usuários e, ao mesmo tempo, fornecem serviços para outros usuários. É auto escalável, ou seja, novos usuários trazemnova capacidade de fornecer e demandar serviços, e os usuários são conectados de forma intermitente e mudam seu endereço IP.
+- Já a arquitetura P2P não existe servidor sempre ligado, e tem comunicação direta entre sistemas finais arbitrários. Os usuários (peers) requisitam serviços de outros usuários e, ao mesmo tempo, fornecem serviços para outros usuários. É auto escalável, ou seja, novos usuários trazem nova capacidade de fornecer e demandar serviços, e os usuários são conectados de forma intermitente e mudam seu endereço IP.
 ### 9) O que é um processo, no contexto do desenvolvimento de aplicações de internet, e como eles são identificados para efeitos de comunicação?
-- Processos são programas rodando em um nó da rede.
+- Processos são programas rodando em um nó da rede(computador).
     - processo cliente: processos que iniciam a comunicação.
     - processo servidor: processo que espera pela conexão.
 - O identificador de um processo é constituído um endereço IP e uma porta.
 ### 10) Explique o que é SSL, no contexto da internet.
-SLL (Secure Sockets Layer) é um protocolo de internet, que está na camada de aplicação do modelo OSI. Ele oferece encriptação para conexões TCP, integridade dos dados e autenticação de destinatário.
+SLL (Secure Sockets Layer) é um protocolo de internet, que está na camada de aplicação. Ele oferece encriptação para conexões TCP, integridade dos dados e autenticação de destinatário.
 ### 11) Em um documento html, quantos são os filhos do nó raiz? Há limite para o número de descendentes do nó raiz? Justifique sua resposta.
 - Em um documento HTML, o nó raiz é representado pela tag `<html>`. De acordo com a especificação do HTML, um documento HTML pode ter exatamente dois filhos diretos do nó raiz: `<head>` e `<body>`.
 - Quanto ao limite para o número de descendentes do nó raiz, não há um limite definido na especificação do HTML. Um documento HTML pode ter um número arbitrário de elementos descendentes do nó raiz.
@@ -131,7 +120,8 @@ Diferencie e caracterize os conceitos de regra, seletor e declaração no contex
 - Padding: O espaço ao redor do conteúdo (ex.: ao redor do texto de um parágrafo)..
 ### 21) Explique e dê exemplos funcionais de utilização das propriedades de posicionamento: static, relative, absolute e fixed.
 - Static: Posicionamento padrão.
-```.positioned {
+```css
+.positioned {
   position: static;
   background: rgba(255,84,104,.3);
   border: 2px solid rgb(255,84,104);
@@ -140,7 +130,8 @@ Diferencie e caracterize os conceitos de regra, seletor e declaração no contex
   }
 ```
 - Relative: Movimentação em relação a posição padrão (inclusive sobrepondo outros elementos).
-```.positioned {
+```css
+.positioned {
   position: relative;
   background: rgba(255,84,104,.3);
   border: 2px solid rgb(255,84,104);
@@ -149,7 +140,8 @@ Diferencie e caracterize os conceitos de regra, seletor e declaração no contex
   }
 ```
 - Absolute: Retira o elemento do fluxo normal e o posiciona relativamente ao documento (ou ao seu elemento pai).
-```.positioned {
+```css
+.positioned {
   position: absolute;
   background: rgba(255,84,104,.3);
   border: 2px solid rgb(255,84,104);
@@ -158,7 +150,8 @@ Diferencie e caracterize os conceitos de regra, seletor e declaração no contex
   }
 ```
 - Fixed: Retira o elemento do fluxo normal e o posiciona relativamente a viewport.
-```.positioned {
+```css
+.positioned {
   position: fixed;
   background: rgba(255,84,104,.3);
   border: 2px solid rgb(255,84,104);
@@ -169,7 +162,7 @@ Diferencie e caracterize os conceitos de regra, seletor e declaração no contex
 ### 22) Como são definidos os blocos de comando no JavaScript?
 Os blocos de comando no JavaScript são definidos utilizando chaves { }. Eles permitem agrupar uma ou mais instruções em um único bloco de código.
 Exemplo:
-```
+```javascript
 if (condição) {
     // Este é um bloco de comando
     instrução1;
