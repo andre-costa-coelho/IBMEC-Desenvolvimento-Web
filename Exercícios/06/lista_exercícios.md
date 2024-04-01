@@ -52,8 +52,6 @@ SSL (Secure Sockets Layer) é uma camada de segurança, que está na camada de a
     - **article** (Artigo): O elemento **article** é utilizado para representar um conteúdo independente e autossuficiente em uma página ou site, como uma postagem de blog, um artigo de notícia ou um comentário.
     - **section** (Seção): O elemento **section** é usado para representar uma seção genérica ou agrupamento de conteúdo em uma página. Ele ajuda a organizar o conteúdo em partes distintas e significativas.
 - Elementos de marcação semântica:
-    - **div** (Divisão): O elemento **div** é utilizado para dividir o conteúdo de uma página HTML em blocos ou seções distintas. É comumente usado como um contêiner genérico para agrupar elementos relacionados e aplicar estilos CSS a eles.
-    - **span** (Span): O elemento **span** é semelhante ao div, mas é usado para aplicar estilos ou scripts a partes específicas do texto ou conteúdo dentro de um bloco de texto, sem quebrar a estrutura do documento.
     - **ul** (Lista Não Ordenada): O elemento **ul** é usado para criar uma lista não ordenada de itens. Cada item da lista é representado por um elemento **li** (Item de Lista).
     - **ol** (Lista Ordenada): O elemento **ol** é usado para criar uma lista ordenada de itens. Assim como **ul**, cada item é representado por um elemento **li**.
     - **p** (Parágrafo): O elemento **p** é utilizado para representar parágrafos de texto em um documento HTML. É usado para separar blocos de texto em unidades lógicas, como parágrafos individuais.
@@ -70,6 +68,7 @@ O elemento **a** é usado em conjunto com o atributo href, que especifica o URL 
 - 5: **textarea**: Ele é utilizado para criar áreas de texto multi-linha em um formulário, permitindo aos usuários inserir blocos de texto mais extensos, como mensagens, comentários ou descrições.     
 ### 16) Explique o que são e para que são utilizados os seguintes atributos html:
 - a) class:
+    - Determina a quais conjuntos o elemento pertence.
     - O atributo class é utilizado para definir uma ou mais classes CSS a um elemento HTML.
     - Ele é usado para agrupar elementos que compartilham estilos semelhantes ou comportamentos específicos.
     - Com a classe definida, é possível aplicar estilos CSS ou comportamentos JavaScript a todos os elementos que possuem essa classe, sem a necessidade de repetir o código para cada elemento. 
@@ -80,7 +79,7 @@ O elemento **a** é usado em conjunto com o atributo href, que especifica o URL 
 - c) name:
     - O atributo name é usado em diferentes contextos em HTML, dependendo do elemento ao qual é aplicado.
     - Em elementos de formulário, como input, textarea e select, o atributo name é usado para identificar o campo quando o formulário é enviado para o servidor.
-    - Em elementos como a, <mg, e map, o atributo name é usado como um identificador para ancoragem, permitindo que os links direcionem para um local específico em uma página.
+    - Em elementos como a, img, e map, o atributo name é usado como um identificador para ancoragem, permitindo que os links direcionem para um local específico em uma página.
 - d) hidden:
     - O atributo hidden é usado para ocultar um elemento HTML de forma que ele não seja exibido na renderização padrão da página.
     - Elementos ocultos ainda estão presentes no DOM (Modelo de Objeto de Documento) e podem ser manipulados por scripts.
@@ -94,26 +93,27 @@ O elemento **a** é usado em conjunto com o atributo href, que especifica o URL 
     - É especialmente útil para fornecer descrições breves e contextuais sobre o conteúdo de um elemento, como o significado de um ícone ou o propósito de um link.
     - O texto fornecido no atributo title é exibido automaticamente pelos navegadores quando o usuário passa o mouse sobre o elemento.
 ### 17) O que seria “degradação graciosa”, também conhecida com “degradação elegante”?
+- ***O principio que baliza a capacidade da tecnologia da web de abrir mão de elementos e manter a coerência e o sentido dos documentos. Isso viabiliza o funcionamento da tecnologia em dispositivos de diferente capacidades e a torna resiliente***.
 - Degradação graciosa, também conhecida como degradação elegante, refere-se à prática de desenvolver um sistema ou uma tecnologia de forma que funcione em uma ampla variedade de ambientes, mesmo que nem todos os recursos ou funcionalidades estejam disponíveis.
 -  Isso significa que, se uma parte do sistema não for suportada ou não estiver disponível em determinado ambiente (como um navegador mais antigo), o sistema ainda será capaz de fornecer uma experiência utilizável, embora possa ser um pouco simplificada.
 - Em essência, a degradação graciosa é sobre garantir que o sistema ainda seja funcional e acessível para o maior número possível de usuários, independentemente das limitações do ambiente em que está sendo executado.
 ### 18) Diferencie e caracterize os conceitos de regra, seletor e declaração no contexto do CSS.
 Diferencie e caracterize os conceitos de regra, seletor e declaração no contexto do CSS.
-- **Seletor**:
-   - Um seletor é usado para selecionar elementos HTML aos quais a regra CSS será aplicada.
-   - Pode ser qualquer expressão que identifique um ou mais elementos HTML, como nomes de elementos, classes, IDs, atributos, pseudoclasses e pseudoelementos.
-   - Por exemplo, o seletor `h1` seleciona todos os elementos `<h1>` na página, enquanto o seletor `.classe` seleciona todos os elementos com a classe especificada.
 - **Declaração**:
    - Uma declaração é composta por uma propriedade e um valor, separados por dois pontos `:` e terminados por um ponto e vírgula `;`.
    - Define como os elementos selecionados pelo seletor serão estilizados.
-   - Por exemplo, em `color: blue;`, `color` é a propriedade CSS que define a cor do texto, e `blue` é o valor atribuído a essa propriedade.
+   - Por exemplo, em `color: blue;`, `color` é a propriedade CSS que define a cor do texto, e `blue` é o valor atribuído a essa propriedade. font-size: 2em. background-color: ffffff
+- **Seletor**:
+   - Um seletor é usado para selecionar elementos HTML aos quais a regra CSS será aplicada.
+   - Pode ser qualquer expressão que identifique um ou mais elementos HTML, como nomes de elementos, classes, IDs, atributos, pseudoclasses e pseudoelementos.
+   - Por exemplo, o seletor `h1` seleciona todos os elementos `<h1>` na página, enquanto o seletor `.classe` seleciona todos os elementos com a classe especificada. p, .autores ou #titulo > span.
 - **Regra**:
    - Uma regra CSS é composta por um seletor seguido por um conjunto de declarações dentro de chaves `{ }`.
    - Define um conjunto de estilos que serão aplicados aos elementos selecionados pelo seletor.
    - Por exemplo, a regra `h1 { color: blue; }` aplica a cor azul a todos os elementos `<h1>` na página.
 ### 19) Diferencie os conceitos de “seletor de classe” e “seletor de id”, no contexto do CSS, fornecendo exemplos de cada um deles.
-- Seletor de classe: O(s) elemento(s) na página com a classe especificada. Várias instâncias da mesma classe podem aparecer em uma página.
-- Seletor de id: O elemento na página com o ID específicado. Em uma determinada página HTML cada valor da página deve ser único.
+- Seletor de classe: Seleciona o(s) elemento(s) na página com a classe especificada. Várias instâncias da mesma classe podem aparecer em uma página. Ex: .minhaClasse
+- Seletor de id: Seleciona o elemento na página com o ID específicado. Em uma determinada página HTML cada valor da página deve ser único. Ex: #meuElemento
 ### 20) No contexto do CSS Box Model, explique os conceitos margin, border e padding
 - Margin: O espaço externo a um elemento
 - Border: A linha sólida do lado de fora do padding.
