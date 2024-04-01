@@ -43,11 +43,33 @@ Uma pilha de protocolos se refere a um conjunto de protocolos de comunicação i
 - Os principais protocolos são TCP (Protocolo de Controle de Transmissão) e UDP (Protocolo de datagrama do usuário).
 - Ao contrário do protocolo TCP, o UDP não oferece transporte de dados confiável, controle de fluxo, controle de congestionamento, controle de tempo, garantia de desempenho (throughput) mínimo e configuração de conexão. No entanto ele é utilizado por funcionar mais rapidamente. 
 ### 8) Quais as principais características da arquitetura cliente-servidor e como ela se diferencia de aplicações peer-to-peer?
+- A arquitetura cliente-servidor está sempre 'no ar' e possui endereço de ip permanente. Os cliente também comunicam-se com o servidor, podem ter conexões intermitentes, podem ter endereços IP dinâmicos  e não se comunicam diretamente entre si
+- Já a arquitetura P2P não existe servidor sempre ligado, e tem comunicação direta entre sistemas finais arbitrários. Os usuários (peers) requisitam serviços de outros usuários e, ao mesmo tempo, fornecem serviços para outros usuários. É auto escalável, ou seja, novos usuários trazemnova capacidade de fornecer e demandar serviços, e os usuários são conectados de forma intermitente e mudam seu endereço IP.
 ### 9) O que é um processo, no contexto do desenvolvimento de aplicações de internet, e como eles são identificados para efeitos de comunicação?
+- Processos são programas rodando em um nó da rede.
+    - processo cliente: processos que iniciam a comunicação.
+    - processo servidor: processo que espera pela conexão.
+- O identificador de um processo é constituído um endereço IP e uma porta.
 ### 10) Explique o que é SSL, no contexto da internet.
-### 11) Em um documento html, quantos são os filhos do nó raiz? Há limite para o número de descendentes do nó raiz? Justifique sua resposta
+SLL (Secure Sockets Layer) é um protocolo de internet, que está na camada de aplicação do modelo OSI. Ele oferece encriptação para conexões TCP, integridade dos dados e autenticação de destinatário.
+### 11) Em um documento html, quantos são os filhos do nó raiz? Há limite para o número de descendentes do nó raiz? Justifique sua resposta.
+- Em um documento HTML, o nó raiz é representado pela tag <html>. De acordo com a especificação do HTML, um documento HTML pode ter exatamente dois filhos diretos do nó raiz: <head> e <body>.
+- Quanto ao limite para o número de descendentes do nó raiz, não há um limite definido na especificação do HTML. Um documento HTML pode ter um número arbitrário de elementos descendentes do nó raiz.
 ### 12) Ao construir documentos html, é recomendado que usemos marcação que forneça significado (semântica) para os componentes do documento. Sendo assim, cite ao menos 5 tipos de elementos de marcação ou organização de conteúdo, além de 5 tipos de elementos de marcação semântica, explicando o significado de todos eles.
+- Elementos de marcação ou organização de conteúdo:
+    - **header** (Cabeçalho): O elemento **header** é utilizado para representar o cabeçalho de uma seção ou página. Pode conter elementos como logotipos, menus de navegação, títulos e outras informações relacionadas ao topo do conteúdo.
+    - **footer** (Rodapé): O elemento **footer** é usado para representar o rodapé de uma seção ou página. Geralmente contém informações como informações de contato, links para redes sociais, créditos e direitos autorais.
+    - **nav** (Navegação): O elemento **nav** é usado para representar uma seção de navegação em uma página ou site. Ele geralmente contém links de navegação, como menus de navegação principal ou secundário.
+    - **article** (Artigo): O elemento **article** é utilizado para representar um conteúdo independente e autossuficiente em uma página ou site, como uma postagem de blog, um artigo de notícia ou um comentário.
+    - **section** (Seção): O elemento **section** é usado para representar uma seção genérica ou agrupamento de conteúdo em uma página. Ele ajuda a organizar o conteúdo em partes distintas e significativas.
+- Elementos de marcação semântica:
+    - **div** (Divisão): O elemento **div** é utilizado para dividir o conteúdo de uma página HTML em blocos ou seções distintas. É comumente usado como um contêiner genérico para agrupar elementos relacionados e aplicar estilos CSS a eles.
+    - **span** (Span): O elemento **span** é semelhante ao div, mas é usado para aplicar estilos ou scripts a partes específicas do texto ou conteúdo dentro de um bloco de texto, sem quebrar a estrutura do documento.
+    - **ul** (Lista Não Ordenada): O elemento **ul** é usado para criar uma lista não ordenada de itens. Cada item da lista é representado por um elemento <li> (Item de Lista).
+    - **ol** (Lista Ordenada): O elemento **ol** é usado para criar uma lista ordenada de itens. Assim como <ul>, cada item é representado por um elemento <li>.
+    - **p** (Parágrafo): O elemento **p** é utilizado para representar parágrafos de texto em um documento HTML. É usado para separar blocos de texto em unidades lógicas, como parágrafos individuais.
 ### 13) Qual elemento é utilizado para que um documento html capture informações dos usuários?
+O elemento utilizado para capturar informações dos usuários em um documento HTML é o <form>. O elemento <form> é uma parte fundamental do HTML usado para criar formulários interativos que permitem aos usuários inserir dados que podem ser enviados para um servidor para processamento.
 ### 14) Qual elemento é utilizado para permitir a navegação entre diferentes documentos html?
 ### 15) Enumere ao menos cinco elementos utilizados em formulários html explicando sua utilidade.
 ### 16) Explique o que são e para que são utilizados os seguintes atributos html:
