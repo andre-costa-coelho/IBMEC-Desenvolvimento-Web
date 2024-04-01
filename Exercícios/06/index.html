@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de posicionamento</title>
+</head>
+<style>
+    body {
+        width: 800px;
+        margin: 0 auto;
+    }
+    p {
+        width: 80%;
+        background-color: aqua;
+        border: solid 1px black;
+        padding: 5px;
+    }
+    #estatico{
+        position: static;
+        background-color: red;
+        width: 200px;
+        height: 200px;
+    }
+    #absoluto{
+        position: absolute;
+        left: 30px;
+        top: 200px;
+        background-color: blue;
+    }
+    #relativo{
+        position: relative;
+        background-color: green;
+        left: 30px;
+        top: 100px;
+    }
+    #fixo{
+        position: fixed;
+        width: 60%;
+        background-color: #ffff0066;
+        top: 5px;
+
+    }
+</style>
+<body>
+    <p id="estatico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repudiandae dolorum ab ad qui vero sunt officiis eius doloribus eos impedit quae, culpa autem ea fugit animi nemo architecto enim.</p>
+    <p id="absoluto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti culpa quam at, similique accusamus autem sint sed facilis animi aperiam officia dolor esse ipsum aspernatur ratione. Est saepe eligendi maxime.</p>
+    <p id="relativo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus iusto quaerat vel laboriosam adipisci voluptates harum modi ipsam quis minima assumenda, perspiciatis sint odio dolorem illum repellendus dolore nihil. Nesciunt?</p>
+    <p id="fixo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quis voluptatum. Unde assumenda possimus ex. Rerum iusto, dolores quod quam pariatur debitis nam labore vitae repudiandae ex obcaecati aspernatur at?</p> 
+</body>
+</html>
