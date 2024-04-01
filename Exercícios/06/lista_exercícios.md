@@ -40,7 +40,7 @@ Uma pilha de protocolos se refere a uma organização lógica de protocolos de c
     - processo servidor: processo que espera pela conexão.
 - O identificador de um processo é constituído um endereço IP e uma porta.
 ### 10) Explique o que é SSL, no contexto da internet.
-SLL (Secure Sockets Layer) é um protocolo de internet, que está na camada de aplicação. Ele oferece encriptação para conexões TCP, integridade dos dados e autenticação de destinatário.
+SSL (Secure Sockets Layer) é uma camada de segurança, que está na camada de aplicação. Ele oferece encriptação para conexões TCP, integridade dos dados e autenticação de destinatário.
 ### 11) Em um documento html, quantos são os filhos do nó raiz? Há limite para o número de descendentes do nó raiz? Justifique sua resposta.
 - Em um documento HTML, o nó raiz é representado pela tag `<html>`. De acordo com a especificação do HTML, um documento HTML pode ter exatamente dois filhos diretos do nó raiz: `<head>` e `<body>`.
 - Quanto ao limite para o número de descendentes do nó raiz, não há um limite definido na especificação do HTML. Um documento HTML pode ter um número arbitrário de elementos descendentes do nó raiz.
