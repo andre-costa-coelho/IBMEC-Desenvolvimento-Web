@@ -40,6 +40,8 @@ Uma pilha de protocolos se refere a um conjunto de protocolos de comunicação i
 - Físico
   - movimenta ‘bits’ na meio físico.
 ### 7) Quais são os principais protocolos da camada de transporte da internet e qual a principal diferença entre eles?
+- Os principais protocolos são TCP (Protocolo de Controle de Transmissão) e UDP (Protocolo de datagrama do usuário).
+- Ao contrário do protocolo TCP, o UDP não oferece transporte de dados confiável, controle de fluxo, controle de congestionamento, controle de tempo, garantia de desempenho (throughput) mínimo e configuração de conexão. No entanto ele é utilizado por funcionar mais rapidamente. 
 ### 8) Quais as principais características da arquitetura cliente-servidor e como ela se diferencia de aplicações peer-to-peer?
 ### 9) O que é um processo, no contexto do desenvolvimento de aplicações de internet, e como eles são identificados para efeitos de comunicação?
 ### 10) Explique o que é SSL, no contexto da internet.
