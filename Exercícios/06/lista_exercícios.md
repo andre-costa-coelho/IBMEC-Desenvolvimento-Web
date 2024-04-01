@@ -65,12 +65,14 @@ SLL (Secure Sockets Layer) é um protocolo de internet, que está na camada de a
 - Elementos de marcação semântica:
     - **div** (Divisão): O elemento **div** é utilizado para dividir o conteúdo de uma página HTML em blocos ou seções distintas. É comumente usado como um contêiner genérico para agrupar elementos relacionados e aplicar estilos CSS a eles.
     - **span** (Span): O elemento **span** é semelhante ao div, mas é usado para aplicar estilos ou scripts a partes específicas do texto ou conteúdo dentro de um bloco de texto, sem quebrar a estrutura do documento.
-    - **ul** (Lista Não Ordenada): O elemento **ul** é usado para criar uma lista não ordenada de itens. Cada item da lista é representado por um elemento <li> (Item de Lista).
-    - **ol** (Lista Ordenada): O elemento **ol** é usado para criar uma lista ordenada de itens. Assim como <ul>, cada item é representado por um elemento <li>.
+    - **ul** (Lista Não Ordenada): O elemento **ul** é usado para criar uma lista não ordenada de itens. Cada item da lista é representado por um elemento **li** (Item de Lista).
+    - **ol** (Lista Ordenada): O elemento **ol** é usado para criar uma lista ordenada de itens. Assim como **ul**, cada item é representado por um elemento **li**.
     - **p** (Parágrafo): O elemento **p** é utilizado para representar parágrafos de texto em um documento HTML. É usado para separar blocos de texto em unidades lógicas, como parágrafos individuais.
 ### 13) Qual elemento é utilizado para que um documento html capture informações dos usuários?
 O elemento utilizado para capturar informações dos usuários em um documento HTML é o <form>. O elemento <form> é uma parte fundamental do HTML usado para criar formulários interativos que permitem aos usuários inserir dados que podem ser enviados para um servidor para processamento.
 ### 14) Qual elemento é utilizado para permitir a navegação entre diferentes documentos html?
+O elemento utilizado para permitir a navegação entre diferentes documentos HTML é o **a**, que representa um hiperlink, ou seja, um link que direciona o usuário para outra página da web.
+O elemento **a** é usado em conjunto com o atributo href, que especifica o URL do documento para o qual o usuário será direcionado ao clicar no link.
 ### 15) Enumere ao menos cinco elementos utilizados em formulários html explicando sua utilidade.
 ### 16) Explique o que são e para que são utilizados os seguintes atributos html:
 - a) class
