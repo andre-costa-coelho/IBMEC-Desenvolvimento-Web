@@ -1,0 +1,75 @@
+#container {
+    display: grid;
+    background-color: rgb(22, 80, 255);
+    grid-template-columns: auto;
+    gap: .3rem;
+    padding: .3rem;
+    grid-template-rows: repeat(6, 5rem);
+}
+
+#container > div {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    background-color: rgb(196, 196, 196);
+    color: rgb(0, 0, 0);
+}
+
+#item1, #item3, #item5, #item7, #item9, #item11, #item13, #item15, #item17 {
+    display: none;
+}
+
+#container > div:nth-child(even) {
+    display: flex;
+}
+
+@media screen and (min-width: 576px) {
+    #container {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #container {
+        grid-template-rows: repeat(4, 5rem);
+    }
+
+    #container > div:nth-child(even) {
+        display: none;
+    }
+    #container > div:nth-child(odd) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #container {
+        grid-template-rows: repeat(6, 5rem);
+    }
+    
+    #container > div:nth-child(even) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #container > div:nth-child(odd) {
+        grid-column: span 3;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #container {
+        grid-template-rows: repeat(8, 5rem);
+    }
+    
+    #container > div:nth-child(odd) {
+        grid-column: span 1;
+    }
+    #container > div:nth-child(even) {
+        grid-column: span 4;
+    }
+}

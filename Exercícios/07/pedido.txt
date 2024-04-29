@@ -1,0 +1,43 @@
+Exercício 1
+
+- Fazer uma página web com 18 ítens, organizados em grid, de maneira similar ao exemplo em https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_lines
+
+- em telas com largura menor que 576px, o grid deve ter apenas uma coluna
+- em telas com largura entre 576px e 768px, o grid deve ter 2 colunas
+- em telas com largura entre 768px e 1024px, o grid deve ter 4 colunas
+- em telas com largura entre 1024px e 1280px, o grid deve ter 6 colunas
+- em telas maiores que 1280px, o grid deve ter 8 colunas
+
+- quando uma ou duas colunas forem exibidas, apenas os itens com números pares devem ser exibidos
+- quando quatro colunas forem exibidas, apenas os itens de números ímpares devem ser exibidos
+- quando seis ou oito colunas forem exibidas, todos os itens devem ser exibidos
+
+-quando seis colunas forem exibidas, os itens ímpares devem ocupar 3 colunas e os pares apenas uma
+-quanso oito colunas forem exibidas, os itens pares devem ocupar 4 colunas e os ímpares apenas uma
+
+Exercício 2
+
+- Fazer uma grid com 4 colunas e 3 linhas que ocupe toda a largura da tela e tenha 300px de altura (mais padding e gap a gosto), com cor amarela
+- Faça um elemento div com cor de fundo preta
+- Faça um elemento div com cor de fundo branca
+- Usando as propriedades grid-area e grid-template-area faça com que as seguintes configurações aconteçam:
+a) até 1024px de largura
+---------------------
+| p  | p  |    |    |
+-----+----+----+-----
+| p  | p  |    |    |
+-----+----+----+-----
+|    | b  | b  | b  |
+---------------------
+
+b) a partir de 1024px de largura
+---------------------
+| p  | p  | p  | p  |
+-----+----+----+-----
+|    |    |    |    |
+-----+----+----+-----
+| b  | b  | b  | b  |
+---------------------
+
+- os espaços marcados com *p* devem ser ocupados pela div preta 
+- os espaços marcados com *b* devem ser ocupados pela div branca
