@@ -1,0 +1,49 @@
+.card{
+    display: grid;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    border: black 2px solid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "a1 a2"
+    "a1 a3"
+    "a4 a4"
+    "a5 a5";
+}
+
+.card > .imagem{
+    overflow: hidden;
+    position: relative;
+    grid-area: a1;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card > .posicao{
+    grid-area: a2;
+    font-weight: bold;
+}
+
+.card > .nome{
+    grid-area: a3;
+}
+
+.card > .descricao{
+    grid-area: a4;
+}
+
+.card > .nascimento{
+    grid-area: a5;
+}
+
+.card > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
