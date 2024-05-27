@@ -1,0 +1,7 @@
+1 - Criar uma nova página com seu próprio script; check
+2 - Enviar o usuário para a nova página se ela "logar"; check
+3 - Guardar a informação sobre o estado do login;
+4 - A nova página deve exibir "ESCONDIDA" apenas para usuários logados;
+5 - A nova página deve ter botão logout;
+6 - Usar um sal;
+7 - Mudar o algoritimo. 
